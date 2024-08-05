@@ -20,10 +20,11 @@ const Stack = createNativeStackNavigator();
 
 const ProductTab = () => {
   return(
-    <Tab.Navigator>
-      <Tab.Screen name='SofaScreen' component={Sofa} />
-      <Tab.Screen name='CornerSeatScreen' component={CornerSeat} />
-      <Tab.Screen name='BergereScreen' component={Bergere} />
+    <Tab.Navigator screenOptions={{
+      headerShown: false}}>
+      <Tab.Screen name='Koltuklar' component={Sofa} />
+      <Tab.Screen name='Köşe Takımları' component={CornerSeat} />
+      <Tab.Screen name='Berjerler' component={Bergere} />
     </Tab.Navigator>
   )
 }
@@ -34,7 +35,8 @@ const ProductTab = () => {
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
+      <Stack.Navigator  screenOptions={{
+      headerShown: false}}>
         <Stack.Screen name='LoginScreen' component={Login} />
         <Stack.Screen name='SignUpScreen' component={SignUp} />
         <Stack.Screen name='Products' component={ProductTab} />
