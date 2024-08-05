@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { StyleSheet, Text, Alert, TouchableOpacity } from 'react-native'
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import * as FileSystem from 'expo-file-system';
 
 import Input from '../components/Input/index'
 
@@ -11,13 +12,13 @@ export default function SignUp({ navigation }) {
     const [userPassword, setUserPasword] = useState(null);
     const [userAdress, setuserAdress] = useState(null);
 
-    function handleSubmit() {
+    const handleSubmit = async () => {
         if (!userName || !userSurname || !userMail || !userPassword || !userAdress) {
             Alert.alert('Bilgiler boş bırakılamaz!');
             return; //üye bilgilerinin sergilendiği sayfaya gitmiyor
         }
 
-        const user = {
+        const userData = {
             userName,
             userSurname,
             userMail,
@@ -25,7 +26,9 @@ export default function SignUp({ navigation }) {
             userAdress
         }
 
-        navigation.navigate('MemberInfoScreen', { user }); //{user} diyerek objeyi de yolladık
+        const fileUri = FileSystem.documentDirectory + 'user_data.json';
+        await FileSystem.writeAsStringAsync(fileUri, JSON.stringify(userData));
+        navigation.navigate('Products', { screen: 'Koltuklar' })
     }
 
     /* normalde onChangeText = {text => setUserName(text)} yapmamız gerekirken react native'in sağladığı kolaylıkla böyle yazmamız yeterli */
