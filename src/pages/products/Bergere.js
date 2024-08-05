@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
-import { FlatList, StyleSheet, Text, View, Image } from 'react-native';
+import { FlatList, StyleSheet, Text, View, Image, TouchableOpacity } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import bergere_data from '../../data/bergere_data.json'
 
 import Card from '../../components/Card'
 import SearchBar from '../../components/SearchBar'
+import Navbar from '../../components/Navbar'
 
-export default function App() {
+export default function Bergere({navigation}) {
   const [list, setList] = useState(bergere_data);
 
   const renderItem = ({item}) => <Card product = {item}/>;
@@ -24,10 +25,12 @@ export default function App() {
     setList(filteredList);
   };
 
+  function navigateScreen() {navigation.navigate('MemberInfoScreen')}
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Image source={require('../../../assets/logo.png')} style={styles.image} />
+        <Navbar onPress = {navigateScreen}/>
         <SearchBar onSearch={handleSearch} />
         <FlatList
           keyExtractor={(item) => item.id}
@@ -40,11 +43,6 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  image: {
-    marginLeft: 10,
-    marginTop: 15,
-  },
-
   container: {
     backgroundColor: '#eeeeee',
     flex: 1,

@@ -6,8 +6,9 @@ import sofa_data from '../../data/sofa_data.json'
 
 import Card from '../../components/Card'
 import SearchBar from '../../components/SearchBar'
+import Navbar from '../../components/Navbar'
 
-export default function App() {
+export default function Sofa() {
   const [list, setList] = useState(sofa_data);
 
   const renderItem = ({item}) => <Card product = {item}/>;
@@ -24,10 +25,12 @@ export default function App() {
     setList(filteredList);
   };
 
+  function navigateScreen() {navigation.navigate('MemberInfoScreen')}
+
   return (
     <SafeAreaProvider>
       <SafeAreaView style={styles.container}>
-        <Image source={require('../../../assets/logo.png')} style={styles.image} />
+        <Navbar onPress = {navigateScreen}/>
         <SearchBar onSearch={handleSearch} />
         <FlatList
           keyExtractor={(item) => item.id}

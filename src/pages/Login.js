@@ -7,7 +7,7 @@ export default function Login({ navigation }) {
         <SafeAreaProvider>
             <SafeAreaView style={styles.main_container}>
                 <View style={styles.container}>
-                    <Image source={require('../../assets/logo.png')} style={styles.image} />
+                    <Image source={require('../../assets/big_logo.png')} style={styles.image} />
                     <View style={styles.button_container}>
                         <TouchableOpacity style={styles.button1} onPress={() => navigation.navigate('SignUpScreen')}>
                             <Text style={styles.title}>Üye ol</Text>
@@ -40,8 +40,8 @@ const styles = StyleSheet.create({
     },
 
     image: {
-        width: 302,
-        height: 75,
+        width: 350,
+        height: 100,
         shadowColor: '#000000'
     },
 

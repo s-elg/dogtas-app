@@ -4,7 +4,7 @@ import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 
 import Input from '../components/Input/index'
 
-export default function MemberSign({ navigation }) {
+export default function SignUp({ navigation }) {
     const [userName, setUserName] = useState('Misafir Kullanıcı');
     const [userSurname, setUserSurname] = useState(null);
     const [userMail, setUserMail] = useState(null);
@@ -25,7 +25,7 @@ export default function MemberSign({ navigation }) {
             userAdress
         }
 
-        navigation.navigate('MemberPageScreen', { user }); //{user} diyerek objeyi de yolladık
+        navigation.navigate('MemberInfoScreen', { user }); //{user} diyerek objeyi de yolladık
     }
 
     /* normalde onChangeText = {text => setUserName(text)} yapmamız gerekirken react native'in sağladığı kolaylıkla böyle yazmamız yeterli */
