@@ -1,0 +1,46 @@
+import * as React from 'react';
+import {Text, View} from 'react-native';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { NavigationContainer } from '@react-navigation/native';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+import Bergere from './pages/products/Bergere';
+import CornerSeat from './pages/products/CornerSeat';
+import Sofa from './pages/products/Sofa';
+
+import Login from './pages/Login';
+
+import SignUp from './pages/SignUp'
+
+import MemberInfo from './pages/MemberInfo';
+
+const Tab = createBottomTabNavigator();
+const Stack = createNativeStackNavigator();
+
+const ProductTab = () => {
+  return(
+    <Tab.Navigator>
+      <Tab.Screen name='SofaScreen' component={Sofa} />
+      <Tab.Screen name='CornerSeatScreen' component={CornerSeat} />
+      <Tab.Screen name='BergereScreen' component={Bergere} />
+    </Tab.Navigator>
+  )
+}
+
+
+
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name='LoginScreen' component={Login} />
+        <Stack.Screen name='SignUpScreen' component={SignUp} />
+        <Stack.Screen name='Products' component={ProductTab} />
+        <Stack.Screen name='MemberInfoScreen' component={MemberInfo} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+

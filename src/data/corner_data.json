@@ -1,0 +1,59 @@
+[
+    {
+      "id": 0,
+      "title": "ROBIN",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0048218_ROBIN-13.jpeg",
+      "price": "17.767₺"
+    },
+    {
+      "id": 1,
+      "title": "MILA",
+      "description": "Yataklı Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/001/0017588_3.jpeg",
+      "price": "28.578₺"
+    },
+    {
+      "id": 2,
+      "title": "PUNTO PLUS",
+      "description": "Modüler Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0044421_3_YAN%20A%C3%87I.jpeg",
+      "price": "35.722₺"
+    },
+    {
+      "id": 3,
+      "title": "LUCCA",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0043652_dogtas%20lucca16708.jpeg",
+      "price": "43.275₺"
+    },
+    {
+      "id": 4,
+      "title": "Massimo",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0051750_2-2-1.jpeg",
+      "price": "48.500₺"
+    },
+    {
+      "id": 5,
+      "title": "LENTO",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0039953_dogtas-lento-kose7167.jpeg",
+      "price": "35.913₺"
+    },
+    {
+      "id": 6,
+      "title": "GIZA",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0051109_midi1.jpeg",
+      "price": "49.596₺"
+    },
+    {
+      "id": 7,
+      "title": "LUCCA PLUS",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0032499_LUCCA-2R.jpeg",
+      "price": "39.579₺"
+    }
+  ]
+  

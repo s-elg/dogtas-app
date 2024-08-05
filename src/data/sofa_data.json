@@ -1,0 +1,87 @@
+[
+    {
+      "id": 0,
+      "title": "MAYER",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/001/0014924_mayer2.jpeg",
+      "price": "14.822₺"
+    },
+    {
+      "id": 1,
+      "title": "LOFT",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/001/0012613_LOFT-KOLTUK-DEKUPE-3'LU-1.jpeg",
+      "price": "13.755₺"
+    },
+    {
+      "id": 2,
+      "title": "HILDA",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0035520_HILDA%20KOLTUK%207R%20kopya.png",
+      "price": "16.914₺"
+    },
+    {
+      "id": 3,
+      "title": "FRAME",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0040850_Frame-Oturma-3.jpeg",
+      "price": "19.426₺"
+    },
+    {
+      "id": 4,
+      "title": "NOVA",
+      "description": "İkili Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/002/0026112_2'li%20yatakl%C4%B1%20koltuk-2.jpeg",
+      "price": "16.483₺"
+    },
+    {
+      "id": 5,
+      "title": "BRITA",
+      "description": "İkili Yataklı - Metal Ayaklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0031552_BRITA-KOLTUK-6R.jpeg",
+      "price": "34.456₺"
+    },
+    {
+      "id": 6,
+      "title": "BEND",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0047837_3l%C3%BC.jpeg",
+      "price": "27.026₺"
+    },
+    {
+      "id": 7,
+      "title": "MARGO",
+      "description": "Üçlü Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0050599_margo-3lu-12.jpeg",
+      "price": "21.214₺"
+    },
+    {
+      "id": 8,
+      "title": "MARGO",
+      "description": "İkili Yataklı Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0050572_margo-2li-1.jpeg",
+      "price": "5.945₺"
+    },
+    {
+      "id": 9,
+      "title": "MILENA",
+      "description": "İkili Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0036009_dogtas-nicole1071.jpeg",
+      "price": "21.006₺"
+    },
+    {
+      "id": 10,
+      "title": "GIZA",
+      "description": "Dörtlü Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0040143_giza%20dogtas8940.jpeg",
+      "price": "42.466₺"
+    },
+    {
+      "id": 11,
+      "title": "ARCH",
+      "description": "Üçlü Baklava Kapitone Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0049170_ARCH-KOLTUK-7R.jpeg",
+      "price": "30.169₺"
+    }
+  ]
+  

@@ -1,0 +1,87 @@
+[
+    {
+      "id": 0,
+      "title": "ROBIN",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0042001_demonte%202259%201%20li.jpeg",
+      "price": "6.967₺"
+    },
+    {
+      "id": 1,
+      "title": "HILDA",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0038627_HILDA-KOLTUK-22R.jpeg",
+      "price": "7.114₺"
+    },
+    {
+      "id": 2,
+      "title": "MAYER",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/001/0015929_MAYER-KOLTUK-6.jpeg",
+      "price": "7.625₺"
+    },
+    {
+      "id": 3,
+      "title": "FRAME",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0040850_Frame-Oturma-3.jpeg",
+      "price": "19.426₺"
+    },
+    {
+      "id": 4,
+      "title": "LOFT",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/001/0012606_LOFT-KOLTUK-DEKUPE-TEKLI-1.jpeg",
+      "price": "7.384₺"
+    },
+    {
+      "id": 5,
+      "title": "BRITA",
+      "description": "Berjer - Metal Ayaklı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0033090_BRITA-31R.jpeg",
+      "price": "18.754₺"
+    },
+    {
+      "id": 6,
+      "title": "LEA",
+      "description": "Berjer - Ceviz Ayaklı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0049316_elissa-berjer-1.jpeg",
+      "price": "11.277₺"
+    },
+    {
+      "id": 7,
+      "title": "MARGO",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0051339_dogtas-margo6558.jpeg",
+      "price": "7.942₺"
+    },
+    {
+      "id": 8,
+      "title": "DELFI",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0036841_Delfi%20berjer-%20O%CC%88N.jpeg",
+      "price": "9.540₺"
+    },
+    {
+      "id": 9,
+      "title": "MILENA",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0036106_Untitled-1_0014_dogtas%20nicole1966.jpeg",
+      "price": "9.727₺"
+    },
+    {
+      "id": 10,
+      "title": "GIZA",
+      "description": "Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0040208_giza%20berjer%20(2).jpeg",
+      "price": "13.216₺"
+    },
+    {
+      "id": 11,
+      "title": "ARCH",
+      "description": "Berjer - Döner Ayaklı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0049661_arch-doner-ayak-berjer.jpeg",
+      "price": "14.288₺"
+    }
+  ]
+  
