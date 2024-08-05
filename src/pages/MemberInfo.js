@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { Text, TouchableOpacity, View, } from 'react-native';
+import { Text, TouchableOpacity, View, StyleSheet} from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import * as FileSystem from 'expo-file-system';
 
@@ -20,12 +20,12 @@ export default function MemberInfo({ route, navigation }) {
         <SafeAreaProvider>
             <SafeAreaView>
                 {userData ? (
-                    <View>
-                        <Text>Adınız: {userData.userName}</Text>
-                        <Text>Soyadınız: {userData.userSurname}</Text>
-                        <Text>Mail adresiniz: {userData.userMail}</Text>
-                        <Text>Şifreniz: {userData.userPassword}</Text>
-                        <Text>Adresiniz: {userData.userAdress}</Text>
+                    <View style = {styles.container}>
+                        <Text style = {styles.label}>ADINIZ: {userData.userName}</Text>
+                        <Text style = {styles.label}>SOYADINIZ: {userData.userSurname}</Text>
+                        <Text style = {styles.label}>MAIL ADRESİNİZ: {userData.userMail}</Text>
+                        <Text style = {styles.label}>ŞİFRENİZ: {userData.userPassword}</Text>
+                        <Text style = {styles.label}>ADRESİNİZ: {userData.userAdress}</Text>
                     </View>
                 ) : (
                     <Text>Loading...</Text>
@@ -34,3 +34,16 @@ export default function MemberInfo({ route, navigation }) {
         </SafeAreaProvider>
     )
 }
+
+
+const styles = StyleSheet.create({
+    container: {
+        margin: 25,
+
+    },
+
+    label: {
+        fontSize: 24,
+        fontWeight: 'bold',
+    }
+})
