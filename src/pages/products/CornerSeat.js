@@ -8,7 +8,7 @@ import Card from '../../components/Card'
 import SearchBar from '../../components/SearchBar'
 import Navbar from '../../components/Navbar'
 
-export default function CornerSeat() {
+export default function CornerSeat({navigation}) {
   const [list, setList] = useState(corner_data);
 
   const renderItem = ({item}) => <Card product = {item}/>;

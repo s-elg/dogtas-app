@@ -8,7 +8,7 @@ import Card from '../../components/Card'
 import SearchBar from '../../components/SearchBar'
 import Navbar from '../../components/Navbar'
 
-export default function Sofa() {
+export default function Sofa({navigation}) {
   const [list, setList] = useState(sofa_data);
 
   const renderItem = ({item}) => <Card product = {item}/>;
