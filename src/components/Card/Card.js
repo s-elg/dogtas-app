@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, Image, TouchableOpacity } from 'react-native';
 
+
 import styles from './Card.style';
 
 const Card = (props) => {
@@ -17,7 +18,7 @@ const Card = (props) => {
                         <Text style={styles.price}>{props.product.price}</Text>
                     </View>
                 </View>
-                <View style = {styles.button_container}>
+                <View style={styles.button_container}>
                     <TouchableOpacity style={styles.button}>
                         <Text style={styles.button_title}>Satın Al</Text>
                     </TouchableOpacity>
