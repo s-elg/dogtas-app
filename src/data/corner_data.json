@@ -8,17 +8,17 @@
     },
     {
       "id": 1,
-      "title": "MILA",
-      "description": "Yataklı Köşe Takımı",
-      "imgURL": "https://www.dogtas.com/images/thumbs/001/0017588_3.jpeg",
-      "price": "28.578₺"
+      "title": "JOY",
+      "description": "Köşe Takımı",
+      "imgURL": "https://www.dogtas.com/images/thumbs/003/0032347_JOY-2R.jpeg",
+      "price": "37.811₺"
     },
     {
       "id": 2,
       "title": "PUNTO PLUS",
-      "description": "Modüler Köşe Takımı",
-      "imgURL": "https://www.dogtas.com/images/thumbs/004/0044421_3_YAN%20A%C3%87I.jpeg",
-      "price": "35.722₺"
+      "description": "Modüler Köşe Takımı + Berjer",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0044417_0_PUNTO%20K%C3%96%C5%9EE.jpeg",
+      "price": "63.450₺"
     },
     {
       "id": 3,
@@ -29,7 +29,7 @@
     },
     {
       "id": 4,
-      "title": "Massimo",
+      "title": "MASSIMO",
       "description": "Köşe Takımı",
       "imgURL": "https://www.dogtas.com/images/thumbs/005/0051750_2-2-1.jpeg",
       "price": "48.500₺"

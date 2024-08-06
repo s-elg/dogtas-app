@@ -2,16 +2,16 @@
     {
       "id": 0,
       "title": "MAYER",
-      "description": "Üçlü Yataklı Koltuk",
-      "imgURL": "https://www.dogtas.com/images/thumbs/001/0014924_mayer2.jpeg",
-      "price": "14.822₺"
+      "description": "Üçlü Yataklı Koltuk (Ceviz Ayaklı)",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0048924_mayer%20promo_0003_mayer%201_.jpeg",
+      "price": "13.600₺"
     },
     {
       "id": 1,
-      "title": "LOFT",
-      "description": "Üçlü Yataklı Koltuk",
-      "imgURL": "https://www.dogtas.com/images/thumbs/001/0012613_LOFT-KOLTUK-DEKUPE-3'LU-1.jpeg",
-      "price": "13.755₺"
+      "title": "ELISSA",
+      "description": "İkili Koltuk (Ceviz Ayaklı)",
+      "imgURL": "https://www.dogtas.com/images/thumbs/004/0049241_elissa-koltuk-tak%C4%B1m%C4%B1-(8).jpeg",
+      "price": "17.377₺"
     },
     {
       "id": 2,
@@ -50,10 +50,10 @@
     },
     {
       "id": 7,
-      "title": "MARGO",
-      "description": "Üçlü Yataklı Koltuk",
-      "imgURL": "https://www.dogtas.com/images/thumbs/005/0050599_margo-3lu-12.jpeg",
-      "price": "21.214₺"
+      "title": "SAVANA",
+      "description": "Üçlü Koltuk",
+      "imgURL": "https://www.dogtas.com/images/thumbs/005/0051498_savana-3-sehpasiz.jpeg",
+      "price": "25.614₺"
     },
     {
       "id": 8,
