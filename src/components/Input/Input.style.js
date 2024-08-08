@@ -10,7 +10,8 @@ export default StyleSheet.create({
         margin: 5,
         padding: 10,
         borderRadius: 12,
-        borderColor: '#BDBDBD'
+        borderColor: '#BDBDBD',
+        backgroundColor: 'white'
     },
 
     label: {
