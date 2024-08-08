@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 import { StyleSheet, Text, Alert, TouchableOpacity, KeyboardAvoidingView, Platform, TouchableWithoutFeedback, ScrollView, Keyboard } from 'react-native'
-import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import * as FileSystem from 'expo-file-system';
 
 import Input from '../components/Input/index'
@@ -16,6 +16,12 @@ export default function SignUp({ navigation }) {
         if (!userName || !userSurname || !userMail || !userPassword || !userAdress) {
             Alert.alert('Bilgiler boş bırakılamaz!');
             return; //üye bilgilerinin sergilendiği sayfaya gitmiyor
+        } else if (!(userMail.endsWith('@gmail.com') || userMail.endsWith('@hotmail.com') || userMail.endsWith('@yahoo.com') || userMail.endsWith('@icloud.com'))) {
+            Alert.alert('Mailiniz şu uzantılardan birini içermelidir:', '@gmail.com, @hotmail.com, @yahoo.com veya @icloud.com');
+            return;
+        } else if(userPassword.length < 8) {
+            Alert.alert('Şifreniz en kısa 8 karakter uzunluğunda olmalı');
+            return;
         }
 
         const userData = {
@@ -43,11 +49,11 @@ export default function SignUp({ navigation }) {
                 <KeyboardAvoidingView behavior={Platform.OS === 'ios' ? 'padding' : 'height'} style={styles.container}>
                     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
                         <ScrollView contentContainerStyle={styles.scrollViewContent}>
-                            <Input placeholder="Adınızı giriniz..." label="Adınız" onChangeText={setUserName} inputMode="text" />
-                            <Input placeholder="Soyadınızı giriniz..." label="Soyadınız" onChangeText={setUserSurname} inputMode="text" />
-                            <Input placeholder="Mail adresinizi giriniz..." label="Mail adresiniz" onChangeText={setUserMail} inputMode="email" />
-                            <Input placeholder="Şifrenizi giriniz..." label="Şifreniz" onChangeText={setUserPasword} secureTextEntry={true} />
-                            <Input placeholder="Adresinizi giriniz..." label="Adresiniz" onChangeText={setuserAdress} multiline={true} numberOfLines={3} />
+                            <Input placeholder='Adınızı giriniz...' label='Adınız' onChangeText={setUserName} inputMode='text' />
+                            <Input placeholder='Soyadınızı giriniz...' label='Soyadınız' onChangeText={setUserSurname} inputMode='text' />
+                            <Input placeholder='Mail adresinizi giriniz...' label='Mail adresiniz' onChangeText={setUserMail} inputMode='email' />
+                            <Input placeholder='Şifrenizi giriniz...' label='Şifreniz' onChangeText={setUserPasword} secureTextEntry={true} />
+                            <Input placeholder='Adresinizi giriniz...' label='Adresiniz' onChangeText={setuserAdress} multiline={true} numberOfLines={3} />
                             <TouchableOpacity style={styles.button} onPress={handleSubmit}>
                                 <Text style={styles.title}>Kaydı tamamla</Text>
                             </TouchableOpacity>
