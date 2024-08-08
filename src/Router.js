@@ -3,6 +3,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import * as FileSystem from 'expo-file-system';
 
 
 import Bergere from './pages/products/Bergere';
@@ -17,6 +18,17 @@ import MemberInfo from './pages/MemberInfo';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
+
+
+async function clearJsonFile() {
+  const fileUri = FileSystem.documentDirectory + 'user_data.json';
+  try {
+    // Dosyayı sıfırla (boş bir içerik ile yaz)
+    await FileSystem.writeAsStringAsync(fileUri, JSON.stringify({}));
+  } catch (error) {
+    console.error('Dosya sıfırlanırken bir hata oluştu:', error);
+  }
+}
 
 const ProductTab = () => {
   return (
@@ -48,10 +60,10 @@ const ProductTab = () => {
         tabBarStyle: [{
           display: 'flex',
         },
-        null
-      ]
+          null
+        ]
       })}
-      
+
     >
       <Tab.Screen name='Koltuklar' component={Sofa} />
       <Tab.Screen name='Köşe Takımları' component={CornerSeat} />
@@ -64,6 +76,11 @@ const ProductTab = () => {
 
 
 export default function App() {
+  React.useEffect(() => {
+    // Uygulama başlatıldığında dosyayı sıfırla
+    clearJsonFile();
+  }, []);
+
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={{
