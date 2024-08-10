@@ -39,7 +39,7 @@ const ProductTab = () => {
           let iconName;
 
           if (route.name === 'Koltuklar') {
-            iconName = focused ? 'chair' : 'chair';
+            iconName = focused ? 'chair' : 'chair'; //paketten kullanacağım icon ismini yazdım
           } else if (route.name === 'Köşe Takımları') {
             iconName = focused ? 'chair' : 'chair';
           } else if (route.name === 'Berjerler') {
@@ -47,15 +47,15 @@ const ProductTab = () => {
           }
 
           // İkon bileşenini döndürür ve stilini uygular
-          return <Icon name={iconName} size={size} color={color} style={{ width: 24, height: 24 }} />;
+          return <Icon name={iconName} size={size} color={color} style={{ width: 24, height: 24 }} />; 
         },
         tabBarIconStyle: {
           width: 24,
           height: 24,
         },
 
-        tabBarActiveTintColor: '#A18A80',
-        tabBarInactiveTintColor: 'gray',
+        tabBarActiveTintColor: '#A18A80', //ekran aktifse icon rengi
+        tabBarInactiveTintColor: 'gray', //ekran inaktifse icon rengi
 
         tabBarStyle: [{
           display: 'flex',
