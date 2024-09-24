@@ -19,14 +19,16 @@ import MemberInfo from './pages/MemberInfo';
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
 
-
+//sayfanın her yenilendiğinde json dosyasını sıfırlaması için 
 async function clearJsonFile() {
   const fileUri = FileSystem.documentDirectory + 'user_data.json';
+  // Dosya yolunu belirtiyoruz. Dosya FileSystem paketindeki documentDirectory dizininde oluşturulacak.
   try {
-    // Dosyayı sıfırla (boş bir içerik ile yaz)
     await FileSystem.writeAsStringAsync(fileUri, JSON.stringify({}));
+    //dosyayı sıfırlaması için
   } catch (error) {
     console.error('Dosya sıfırlanırken bir hata oluştu:', error);
+    //eğer hata olursa try-catch yapısıyla hatayı yakalıyoruz
   }
 }
 
@@ -77,6 +79,8 @@ const ProductTab = () => {
 
 export default function App() {
   React.useEffect(() => {
+    // fonksiyonumuzu çalıştırmak için useEffect kullandım
+    // useEffect fonksiyonların render edilmesi dışındaki durumlarda kullanılır.
     // Uygulama başlatıldığında dosyayı sıfırla
     clearJsonFile();
   }, []);
